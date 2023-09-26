@@ -36,7 +36,6 @@ fluvio = { path = "../fluvio", default-features = false }
 fluvio-package-index = { workspace = true,  features = ["http_agent"] }
 fluvio-types = { workspace = true , optional = true }
 fluvio-protocol = { workspace = true,  optional = true }
-fluvio-future = { workspace = true }
 fluvio-sc-schema = { path = "../fluvio-sc-schema" }
 fluvio-smartmodule = { path = "../fluvio-smartmodule",  default-features = false }
 fluvio-smartengine = { path = "../fluvio-smartengine", features = ["transformation"] }

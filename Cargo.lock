@@ -6816,10 +6816,8 @@ name = "smartmodule-development-kit"
 version = "0.0.0"
 dependencies = [
  "anyhow",
- "bytes 1.5.0",
  "cargo-builder",
  "cargo-generate",
- "chrono",
  "clap",
  "dirs 5.0.1",
  "enum-display",
@@ -6832,11 +6830,9 @@ dependencies = [
  "fluvio-protocol",
  "fluvio-sc-schema",
  "fluvio-smartengine",
- "fluvio-smartmodule",
  "include_dir",
  "lib-cargo-crate",
  "tempfile",
- "thiserror",
  "toml 0.8.1",
  "tracing",
 ]

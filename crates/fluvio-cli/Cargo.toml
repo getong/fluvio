@@ -88,7 +88,7 @@ fluvio-command = { workspace = true  }
 fluvio-package-index = { workspace = true }
 fluvio-extension-common = { workspace = true,  features = ["target"] }
 fluvio-channel = { workspace = true }
-fluvio-cli-common = { workspace = true  }
+fluvio-cli-common = { workspace = true, features = ["smartmodule-test"] }
 fluvio-hub-util = { workspace = true  }
 fluvio-smartengine = { workspace = true,  features = ["transformation"]}
 fluvio-protocol = { workspace = true, features=["record","api"] }

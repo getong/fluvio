@@ -4,6 +4,8 @@ pub mod error;
 
 #[cfg(feature = "file-records")]
 pub mod user_input;
+
+#[cfg(feature = "smartmodule-test")]
 pub mod smartmodule;
 
 // Environment vars for Channels

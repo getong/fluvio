@@ -2568,9 +2568,16 @@ name = "fluvio-cli-common"
 version = "0.0.0"
 dependencies = [
  "anyhow",
+ "bytes 1.5.0",
+ "chrono",
+ "clap",
+ "fluvio",
  "fluvio-future",
  "fluvio-package-index",
  "fluvio-protocol",
+ "fluvio-sc-schema",
+ "fluvio-smartengine",
+ "fluvio-smartmodule",
  "fluvio-types",
  "futures 0.3.28",
  "hex",

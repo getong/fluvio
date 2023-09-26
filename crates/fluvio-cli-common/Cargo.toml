@@ -18,6 +18,9 @@ file-records = ["fluvio-protocol/record", "fluvio-protocol/api"]
 
 [dependencies]
 anyhow = { workspace = true }
+bytes = { workspace = true }
+clap = { workspace = true }
+chrono = { workspace = true }
 futures = { workspace = true, features = ["std", "io-compat"]}
 home = { workspace = true }
 hex = { workspace = true }
@@ -29,9 +32,14 @@ tempfile = { workspace = true }
 thiserror = { workspace = true }
 tracing = { workspace = true }
 
+fluvio = { path = "../fluvio", default-features = false }
 fluvio-package-index = { workspace = true,  features = ["http_agent"] }
 fluvio-types = { workspace = true , optional = true }
 fluvio-protocol = { workspace = true,  optional = true }
+fluvio-future = { workspace = true }
+fluvio-sc-schema = { path = "../fluvio-sc-schema" }
+fluvio-smartmodule = { path = "../fluvio-smartmodule",  default-features = false }
+fluvio-smartengine = { path = "../fluvio-smartengine", features = ["transformation"] }
 
 [dev-dependencies]
 fluvio-future = { workspace = true, features = ["fs", "io", "subscriber", "native2_tls", "fixture"] }

@@ -4,6 +4,7 @@ pub mod error;
 
 #[cfg(feature = "file-records")]
 pub mod user_input;
+pub mod smartmodule;
 
 // Environment vars for Channels
 pub const FLUVIO_RELEASE_CHANNEL: &str = "FLUVIO_RELEASE_CHANNEL";

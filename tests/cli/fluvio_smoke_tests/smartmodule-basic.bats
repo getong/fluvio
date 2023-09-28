@@ -68,3 +68,14 @@ setup_file() {
     assert_failure
     assert_output --partial "SmartModule not found"
 }
+
+# Download smartmodule from hub and test it without creating a new project
+@test "Test external smartmodule" {
+      run timeout 15s "$FLUVIO_BIN" hub sm download "infinyon/regex-filter@0.1.0"
+      assert_success
+
+      run timeout 15s "$FLUVIO_BIN" sm test \
+          -t '{"uses":"infinyon/regex-filter@0.1.0", "with": {"regex": "^f"}}' \
+          --text 'fluvio'
+      assert_output --partial fluvio
+}

@@ -1041,6 +1041,13 @@ jobs:
         run: |
           make build_smartmodules
 
+      - name: Log in Fluvio Cloud
+        env:
+          ORG_HUB_SA_PASSWD_DEV: ${{ secrets.ORG_HUB_SA_PASSWD_DEV }}
+          ORG_HUB_SA_NAME: ${{ secrets.ORG_HUB_SA_NAME }}
+        run: |
+          RUST_LOG=debug fluvio cloud login --email "$ORG_HUB_SA_NAME" --password "$ORG_HUB_SA_PASSWD_DEV" --remote https://dev.infinyon.cloud 
+
       # Run fluvio test
       - name: Run Fluvio CLI smoke tests
         if: matrix.test == 'fluvio'

@@ -2507,7 +2507,7 @@ version = "0.21.3"
 dependencies = [
  "anyhow",
  "async-channel 1.9.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-rwlock",
  "async-std",
  "async-trait",
@@ -3081,7 +3081,7 @@ version = "0.0.0"
 dependencies = [
  "anyhow",
  "async-channel 1.9.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-net",
  "async-trait",
  "base64 0.21.5",
@@ -3199,7 +3199,7 @@ name = "fluvio-socket"
 version = "0.14.6"
 dependencies = [
  "async-channel 1.9.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-net",
  "async-trait",
  "built",
@@ -3229,7 +3229,7 @@ dependencies = [
  "anyhow",
  "async-channel 1.9.0",
  "async-io 1.13.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-net",
  "async-rwlock",
  "async-trait",
@@ -3295,7 +3295,7 @@ version = "0.0.0"
 dependencies = [
  "anyhow",
  "async-channel 1.9.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-trait",
  "blocking",
  "bytes 1.5.0",
@@ -3326,7 +3326,7 @@ version = "0.13.0"
 dependencies = [
  "anyhow",
  "async-channel 1.9.0",
- "async-lock 2.8.0",
+ "async-lock 3.1.2",
  "async-trait",
  "event-listener 3.1.0",
  "fluvio-future",
